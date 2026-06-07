@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Casos Ecuador - Visualizaciones</title>
+
+    <style>
+        body{
+            font-family:Segoe UI,sans-serif;
+            background:#0D1117;
+            color:white;
+            margin:0;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:10px;
+        }
+
+        p{
+            text-align:center;
+            color:#B0B0B0;
+            margin-bottom:40px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#161B22;
+            border-radius:15px;
+            padding:25px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:15px;
+            padding:10px 20px;
+            background:#1DA1F2;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Análisis de la Crisis Penitenciaria en Ecuador</h1>
+
+<p>
+Visualizaciones interactivas desarrolladas para el proyecto
+Red Social X – Vinculación 2026
+</p>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Mapa de Incidentes</h2>
+        <p>Distribución geográfica de eventos registrados.</p>
+
+        <a class="btn"
+           href="I1_mapa_incidentes.html">
+           Abrir visualización
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Educación y Centros</h2>
+        <p>Treemap de nivel educativo por centro penitenciario.</p>
+
+        <a class="btn"
+           href="I2_burbujas_armas.html">
+           Abrir visualización
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Edad y Empleo Formal</h2>
+        <p>Relación entre edad y antecedentes laborales.</p>
+
+        <a class="btn"
+           href="I3_sentencias_educacion.html">
+           Abrir visualización
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Violencia y Armas</h2>
+        <p>Eventos violentos y tipo de arma utilizada.</p>
+
+        <a class="btn"
+           href="I4_ocupaciones_vulnerabilidad.html">
+           Abrir visualización
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
