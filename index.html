@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Crisis Penitenciaria en Ecuador | Red Social X
+    </title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI',sans-serif;
+            background:#0D1117;
+            color:white;
+            min-height:100vh;
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+            background:linear-gradient(
+                135deg,
+                #1DA1F2,
+                #0A66C2
+            );
+        }
+
+        header h1{
+            font-size:2.5rem;
+            margin-bottom:15px;
+        }
+
+        header p{
+            max-width:900px;
+            margin:auto;
+            line-height:1.7;
+            font-size:1.1rem;
+        }
+
+        .container{
+            width:90%;
+            max-width:1400px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .info{
+            background:#161B22;
+            padding:25px;
+            border-radius:15px;
+            margin-bottom:35px;
+            line-height:1.8;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#161B22;
+            border-radius:15px;
+            padding:25px;
+            transition:.3s;
+            border:1px solid #2D3748;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#1DA1F2;
+        }
+
+        .card h2{
+            margin-bottom:15px;
+            color:#1DA1F2;
+        }
+
+        .card p{
+            line-height:1.6;
+            color:#d1d5db;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            background:#1DA1F2;
+            color:white;
+            text-decoration:none;
+            padding:12px 20px;
+            border-radius:10px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#0A84D0;
+        }
+
+        footer{
+            margin-top:50px;
+            padding:25px;
+            text-align:center;
+            color:#9ca3af;
+            border-top:1px solid #2D3748;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        Crisis Penitenciaria en Ecuador
+    </h1>
+
+    <p>
+        Plataforma de visualización desarrollada para el proyecto
+        de Vinculación PUCE 2026. Esta página integra múltiples
+        bases de datos públicas para analizar patrones sociales,
+        judiciales y territoriales relacionados con la crisis
+        penitenciaria ecuatoriana.
+    </p>
+
+</header>
+
+<div class="container">
+
+    <div class="info">
+
+        <h2>Sobre el proyecto</h2>
+
+        <p>
+            Este portal presenta visualizaciones interactivas
+            construidas a partir del cruce de información de:
+        </p>
+
+        <br>
+
+        <ul>
+            <li>Fiscalía General del Estado</li>
+            <li>Registro Civil</li>
+            <li>Consejo de la Judicatura</li>
+            <li>Instituto Ecuatoriano de Seguridad Social (IESS)</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Los datos han sido anonimizados para proteger la identidad
+            de las personas involucradas y se presentan únicamente
+            con fines académicos y de investigación.
+        </p>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>🗺️ Mapa de Incidentes</h2>
+
+            <p>
+                Distribución geográfica de los eventos registrados
+                en centros penitenciarios del Ecuador.
+            </p>
+
+            <a
+                class="btn"
+                href="outputs2/I1_mapa_incidentes.html">
+
+                Abrir visualización
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>🎓 Educación y Centros</h2>
+
+            <p>
+                Relación entre nivel educativo y centros
+                penitenciarios mediante un Treemap interactivo.
+            </p>
+
+            <a
+                class="btn"
+                href="outputs2/I2_burbujas_armas.html">
+
+                Abrir visualización
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>👥 Edad y Empleo Formal</h2>
+
+            <p>
+                Distribución de edades y antecedentes de empleo
+                formal registrados en el IESS.
+            </p>
+
+            <a
+                class="btn"
+                href="outputs2/I3_sentencias_educacion.html">
+
+                Abrir visualización
+
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>⚠️ Violencia y Armas</h2>
+
+            <p>
+                Relación entre eventos violentos registrados y
+                tipos de armas identificadas.
+            </p>
+
+            <a
+                class="btn"
+                href="outputs2/I4_ocupaciones_vulnerabilidad.html">
+
+                Abrir visualización
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    Proyecto académico · Red Social X · PUCE 2026
+
+</footer>
+
+</body>
+
+</html>
